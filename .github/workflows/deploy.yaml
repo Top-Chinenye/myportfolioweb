@@ -32,4 +32,13 @@ jobs:
         uses: actions/checkout@v2
 
       - name: run a linux command 
-        run: cat style.css   
+        run: ls -la   
+
+  deploy4:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: run a linux command 
+        run: cat index.html  
