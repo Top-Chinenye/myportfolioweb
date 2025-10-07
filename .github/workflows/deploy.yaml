@@ -7,11 +7,22 @@ on:
        - cicd
 
 jobs:
-  deploy:
+  deploy1:
     runs-on: ubuntu-latest 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
       - name: run a linux command 
-        run: ls -la     
+        run: ls -la   
+
+jobs:
+  deploy2:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: run a linux command 
+        run: cat index.html
+              
