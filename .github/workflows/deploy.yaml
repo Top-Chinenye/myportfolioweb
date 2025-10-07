@@ -16,7 +16,6 @@ jobs:
       - name: run a linux command 
         run: ls -la   
 
-jobs:
   deploy2:
     runs-on: ubuntu-latest 
     steps:
@@ -25,4 +24,3 @@ jobs:
 
       - name: run a linux command 
         run: cat index.html
-              
